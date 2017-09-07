@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Microsoft YaHei';
+}
+
+a{
+   text-decoration: none;
+   opacity: 0.9;
+}
+
+a:visited{
+    color:cornflowerblue;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+p.nav,h1{
+    margin:10px 30px;
+}
+
+h1,p.nav span{
+    color: dimgray
+}
+
+hr{
+   background:dodgerblue;
+   height: 1px;
+}
+
+#form{
+    padding:40px 0  30px 0;
+   width:40%;
+    margin: 0 auto;
+    text-align: center;
+    border:4px cornflowerblue solid;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    animation: bounceInDown 2s;
+}
+
+@media (max-width:960px){
+    #form{
+        border:none;
+    }
+}
+
+
+#form button{
+    width:80px;
+    height:30px;
+    cursor: pointer;
+    margin-left:200px;
+    opacity: 0.8;
+}
+#form label{
+        color: cornflowerblue;
+
+}
+
+#form input{
+    width: 200px;
+    height:30px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+#form button:hover{
+    opacity: 1;
+}
+
+#form input:focus{
+    box-shadow:0px 0px 3px  cornflowerblue inset;
+}
+
+#tip1,#tip2{
+    color: red;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.thumbnail{
+            height:60px;
+           width: 150px;
+           background-image: url('../img/tologin.jpg');
+           background-repeat:no-repeat;
+           background-position: center;
+           background-size:150px 60px;
+           margin-left: 58%;
+           border: none;
+}
+
+#tologin p{
+    font-size: 40px;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+#tologin{
+    display: none;
+    width:70%;
+    margin: 100px auto;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}

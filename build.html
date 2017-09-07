@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>银行储蓄卡管理系统--新开户</title>
+        <link rel="stylesheet" href=".\css\bootstrap.min.css"/>
+    <link rel="stylesheet" href=".\css\build.css" />
+</head>
+<body>
+    <ol class="breadcrumb">
+	<li><a  target="_self">账户登录</a></li>
+	<li class="active">客户操作</li>
+    </ol>
+    <h1>新开户</h1>
+    <div id="form">
+         <label for="card">　　卡号：</label>
+         <input id="card" type="text" placeholder="卡号长度不超过10位"/>
+         <br/><br/>
+         <label for="name">　　姓名：</label>
+         <input id="name" type="text"/>
+         <br/><br/>
+         <label for="money">开户金额：</label>
+         <input id="money" type="text"/>
+         <br/><br/>
+         <label for="pass">　　密码：</label>
+         <input id="pass" type="password"/>
+         <br/><br/>
+         <label for="repass">确认密码：</label>
+         <input id="repass" type="password"/>
+         <p id="tip1">　　</p>
+         <br/>
+         <button id="btn3">提交</button>
+         <br/><br/>
+         <p id="tip2">　　</p>
+    </div>
+    <div id="tologin">
+        <p>开户成功，赶快去登录吧</p>
+        <a  target="_self" class="thumbnail"></a>
+    </div>
+    <script src=".\js\jquery-3.1.0.min.js"></script>
+    <script src=".\js\build.js"></script>
+</body>
+</html>

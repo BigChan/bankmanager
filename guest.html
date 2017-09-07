@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>银行储蓄卡管理系统--客户操作</title>
+    <link rel="stylesheet" href=".\css\bootstrap.min.css"/>
+    <link rel="stylesheet" href=".\css\guest.css"/>
+</head>
+<body>
+    <ol class="breadcrumb">
+	<li><a class="back" target="_self">账户登录</a></li>
+	<li class="active">客户操作</li>
+    </ol>
+        <span class="glyphicon glyphicon-user login" > <span class="user" title=''></span></span>
+        <a class="glyphicon glyphicon-remove-sign remove"></a>
+        <!--<span class="user" title=''></span>-->
+        <!--<a class="remove">退出登录</a>-->
+    <ul class="nav nav-tabs nav-justified">
+	<li class="active"><a href="#">存款</a></li>
+	<li ><a href="#">取款</a></li>
+	<li><a href="#">查询余额</a></li>
+	<li><a href="#">历史记录查询</a></li>
+	<li><a href="#">账号注销</a></li>
+</ul>
+   <div id="menu">
+
+    <!--存款界面-->
+    <div class="cunkuan col-lg-4 col-lg-offset-4">
+        <form>
+       <h4 class="text-left">请输入存款金额：</h4>
+       <div class="input-group">
+         <span class="input-group-addon">￥</span>
+         <input type="text" class="input1 form-control" >
+      </div>
+      <br/>
+       <button type="submit" class="btn1 btn btn-default active col-lg-offset-10">提交</button>
+       </form>
+       <br/>
+       <p class="tip tip1"></p>
+       <span class="tip" style="color: red ;font-size:20px"></span><span class="tip"></span>
+    </div>
+
+    <!--取款界面-->
+    <div class="qukuan col-lg-4 col-lg-offset-4">
+        <form>
+         <h4 class="text-left">请输入取款金额：</h4>
+       <div class="input-group">
+         <span class="input-group-addon">￥</span>
+         <input type="text" class="input2 form-control" />
+      </div>
+      <br/>
+       <button type="submit" class="btn2 btn btn-default active col-lg-offset-10">提交</button>
+       </form>
+       <p class="tip2 tip"></p>
+       <span class='tip' style="color: red ;font-size:20px"></span><span class="tip"></span>
+    </div>
+
+    <!--查询余额界面-->
+    <div class="search-left col-lg-4 col-lg-offset-4">
+        <div class=" jumbotron">
+            <p class=' text-center'>请稍后，系统正在为您查询</p>
+        </div>
+        <div class="jumbotron">
+                <p class="text-center">您的账号余额为：<span style="color: red ;font-size:30px"></span>&nbsp;&nbsp;元</p>
+        </div>
+    </div>
+
+    <!--历史记录查询界面-->
+    <div class="search-list col-lg-4 col-lg-offset-4">
+          <div class=" jumbotron ">
+            <p class='text-center'>请稍后，系统正在为您查询</p>
+        </div>
+         <div id="list">
+              <table class='table table-striped '>
+               <caption>历史操作记录</caption>
+               <thead>
+               <tr>
+                  <th class="time text-center">时间</th>
+                  <th class='behavior text-center'>行为</th>
+                  <th class='text-center'>变化金额</th>
+                 <th class='text-center'>余额</th>
+             </tr>
+             </thead>
+             </table>
+             
+             <div class="list">
+                  
+             </div>
+         </div>
+    </div>
+
+    <!--账号注销界面-->
+    <div class="del col-lg-4 col-lg-offset-4">
+           <form>
+            <label for="exampleInputPassword1">请输入密码：</label>
+            <input type="password" class="input3 form-control"  placeholder="Password">
+            <br/>
+             <button type="submit" class="btn3 btn btn-default active col-lg-offset-10">确认</button>
+             <p class="tip4 tip"></p>
+             </form>
+            <div class="tishi3 jumbotron">
+                <h2 >客户信息：</h2>
+                <p ></p>
+                <p ></p>
+                <p ></p>
+                <button type="button" class="btn4 btn btn-success col-lg-offset-3">取消操作</button>
+                <button type="button" class="btn5 btn btn-warning col-lg-offset-1">注销账号</button>
+            </div>
+    </div>
+
+    </div>
+    <script src=".\js\jquery-3.1.0.min.js"></script>
+    <script src=".\js\bootstrap.min.js"></script>
+    <script src=".\js\guest.js"></script>
+</body>
+</html>
